@@ -194,7 +194,7 @@ func (parser *Parser) AddOperation(op *Operation) {
 		api.SwaggerVersion = SwaggerVersion
 		api.ResourcePath = "/" + resource
 		if parser.Listing.BasePath == "" {
-			api.BasePath = "{{.}}"
+			api.BasePath = ""
 		} else {
 			api.BasePath = parser.Listing.BasePath
 		}
